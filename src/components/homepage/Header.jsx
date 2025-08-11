@@ -38,7 +38,7 @@ const StyledAvatar = styled(Avatar)(({ theme }) => ({
   "&:hover": {
     transform: "scale(1.05)", // Slight scale on hover
   },
-  border: `4px solid ${theme.palette.primary.main}`, // Border matching primary color
+  border: `4px solid ${theme.palette.primary.main}`,
 }));
 
 const Header = () => {
@@ -95,8 +95,7 @@ const Header = () => {
                   mb: 3,
                 }}
               >
-                AI-ML Enthusiast | Full Stack Developer | Open Source
-                Contributor
+                AI-ML Developer | Full Stack Developer | Content Creator
               </Typography>
 
               <Box
@@ -142,7 +141,7 @@ const Header = () => {
                 <IconButton
                   color="inherit"
                   aria-label="LinkedIn"
-                  href="https://www.linkedin.com/in/supratim-nag/"
+                  href="https://www.linkedin.com/in/snsupratim/"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -158,7 +157,7 @@ const Header = () => {
                 <IconButton
                   color="inherit"
                   aria-label="GitHub"
-                  href="https://github.com/supratim003/JobMate-AI"
+                  href="https://github.com/snsupratim"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -174,7 +173,7 @@ const Header = () => {
                 <IconButton
                   color="inherit"
                   aria-label="Email"
-                  href="mailto:your.email@example.com"
+                  href="mailto:snsupratim@gmail.com"
                   sx={{
                     "&:hover": {
                       color: theme.palette.primary.main,

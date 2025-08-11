@@ -22,33 +22,28 @@ import { styled } from "@mui/system"; // For styled components
 // Define your courses data with a certificate property (optional)
 const courses = [
   {
-    title: "Python for Data Science and Machine Learning Bootcamp",
-    platform: "Udemy (Jose Portilla)",
+    title: "Python for Data Science.",
+    platform: "Udemy (Sara Academy)",
     year: "2023",
-    certificate: "/certificates/python_data_science_certificate.pdf", // Path to your certificate PDF/image
-    platformLink:
-      "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/", // Optional: link to the course on the platform
+    certificate: "/certificates/python_data_science_certificate.pdf",
   },
   {
-    title: "Data Analytics Masterclass",
-    platform: "LearnTube",
-    year: "2023",
-    certificate: "/certificates/data_analytics_certificate.png", // Path to your certificate
-    // platformLink: "https://www.learntube.com/data-analytics",
+    title: "RAG with Embeddings & VectorDB",
+    platform: "Coursera",
+    year: "2025",
+    certificate: "/certificates/Coursera_RAG.pdf",
   },
   {
-    title: "Internet of Things (IoT) Workshop Certificate",
-    platform: "MCKV Institute of Engineering", // More specific institution name
-    year: "2022",
-    certificate: "/certificates/iot_workshop_certificate.pdf", // Path to your certificate
-    // platformLink: null, // No external link for workshop
+    title: "Programming using Java",
+    platform: "Infosys Springboard", // More specific institution name
+    year: "2025",
+    certificate: "/certificates/java.pdf",
   },
   {
-    title: "Advanced React & Redux",
-    platform: "Pluralsight",
-    year: "2024",
-    certificate: "/certificates/react_redux_certificate.pdf",
-    // platformLink: "https://www.pluralsight.com/courses/react-redux-advanced",
+    title: "Database Management Systems",
+    platform: "Infosys Springboard",
+    year: "2025",
+    certificate: "/certificates/dbms.pdf",
   },
 ];
 

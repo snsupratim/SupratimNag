@@ -18,26 +18,33 @@ const projects = [
   {
     title: "AgriVision",
     description:
-      "AI-powered assistant for farmers: crop disease detection, marketplace & more.",
-    image: "/images/agrivision.jpg", // Place in public/images/
-    github: "https://github.com/supratim003/AgriVision",
-    tech: ["React", "Flask", "ResNet50", "MongoDB"],
+      "AI-powered full-stack web application crop disease detection, marketplace .",
+    image: "/images/a.png", // Place in public/images/
+    github: "https://github.com/snsupratim/AgriVision",
+    tech: [
+      "ReactJs",
+      "Flask",
+      "ResNet50",
+      "MongoDB",
+      "PyTorch",
+      "NodeJs",
+      "ExpressJs",
+    ],
   },
   {
-    title: "IQuest",
-    description:
-      "Full-stack contest platform with quiz, coding, and treasure hunt rounds.",
-    image: "/images/iquest.jpg",
-    github: "https://github.com/supratim003/IQuest",
-    tech: ["MERN Stack", "Firebase", "Node.js"],
+    title: "OnlyDev",
+    description: "Full-stack Freelance service provider application . ",
+
+    image: "/images/o.png",
+    github: "https://github.com/snsupratim/OnlyDev",
+    tech: ["ReactJs", "MySQL", "SpringBoot"],
   },
   {
-    title: "JobMate AI",
-    description:
-      "AI-based job application builder using LangChain and LLaMA on Groq API.",
-    image: "/images/jobmate.jpg",
-    github: "https://github.com/supratim003/JobMate-AI",
-    tech: ["LangChain", "Groq", "Streamlit", "LLaMA"],
+    title: "FastCom",
+    description: "Full-stack Ecommerce Platform with admin configuration.",
+    image: "/images/f.png",
+    github: "https://github.com/snsupratim/FastCom",
+    tech: ["ReactJs", "MySQL", "SpringBoot", "Postman"],
   },
 ];
 

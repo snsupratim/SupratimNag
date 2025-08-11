@@ -1,19 +1,36 @@
 // data/projects.js
 const webprojects = [
   {
-    title: "E-Commerce Website",
-    image: "/images/ecommerce.png",
+    title: "AgriVision",
+    image: "/images/a.png",
     description:
-      "A full-stack MERN e-commerce website with payment integration.",
-    techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-    github: "https://github.com/snsupratim/ecommerce-site",
+      "AI-powered full-stack web application crop disease detection, marketplace .",
+    techStack: [
+      "ReactJs",
+      "Flask",
+      "ResNet50",
+      "MongoDB",
+      "PyTorch",
+      "NodeJs",
+      "ExpressJs",
+    ],
+    github: "https://github.com/snsupratim/AgriVision",
+  },
+
+  {
+    title: "FastCom",
+    description: "Full-stack Ecommerce Platform with admin configuration.",
+    image: "/images/f.png",
+    github: "https://github.com/snsupratim/FastCom",
+    techStack: ["ReactJs", "MySQL", "SpringBoot", "Postman"],
   },
   {
-    title: "Portfolio Website",
-    image: "/images/portfolio.png",
-    description: "Personal portfolio built with React and Material UI.",
-    techStack: ["React", "Material UI", "EmailJS"],
-    github: "https://github.com/snsupratim/portfolio",
+    title: "OnlyDev",
+    description: "Full-stack Freelance service provider application . ",
+
+    image: "/images/o.png",
+    github: "https://github.com/snsupratim/OnlyDev",
+    techStack: ["ReactJs", "MySQL", "SpringBoot"],
   },
   // Add more projects...
 ];

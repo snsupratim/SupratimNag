@@ -14,15 +14,15 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday"; // Icon for d
 const educationData = [
   {
     degree: "B.Tech in Computer Science & Engineering (AI/ML Specialization)",
-    institution: "MCKV Institute of Engineering, Kolkata",
-    duration: "September 2021 – August 2025 (Expected)",
+    institution: "MCKV Institute of Engineering, Liluah, Howrah.",
+    duration: "October 2022  – June 2026 (Expected)",
     details:
-      "Currently pursuing my Bachelor's degree with a strong focus on Artificial Intelligence, Machine Learning, and advanced Full Stack Development. Maintaining a consistent academic record.",
+      "Currently pursuing my 4th year of Bachelor's degree with a strong focus on Artificial Intelligence, Machine Learning, and advanced Full Stack Development. Maintaining a consistent academic record.",
   },
   {
-    degree: "Higher Secondary Education (Class 12th)",
-    institution: "South Point High School, Kolkata", // Replace with your actual school name
-    duration: "May 2019 – May 2021",
+    degree: "Secondary Education (Class 11th-12th)",
+    institution: "Howrah Vivekanda Institution",
+    duration: "April 2020 – March 2022",
     details:
       "Completed my higher secondary education with a science stream, specializing in Physics, Chemistry, Mathematics, and Computer Science. Achieved excellent results.",
   },

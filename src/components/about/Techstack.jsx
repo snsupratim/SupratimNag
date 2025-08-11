@@ -11,27 +11,20 @@ import {
 import { styled } from "@mui/system";
 
 const techstack = {
-  Languages: ["C/C++", "Python", "Java", "JavaScript", "Go", "PHP"],
-  Frontend: ["React.js", "HTML5", "CSS3", "Tailwind", "Bootstrap"],
-  Backend: ["Node.js", "Express.js", "Flask", "Django", "Spring Boot"],
-  Databases: ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis"],
-  "DevOps & Platforms": [
-    "Docker",
-    "Git",
-    "GitHub",
-    "Vercel",
-    "AWS",
-    "Render",
-    "Azure",
-  ], // Added one more for example
-  "AI/ML & Data": [
-    "TensorFlow",
-    "PyTorch",
-    "Scikit-learn",
-    "Pandas",
-    "NumPy",
-    "OpenCV",
-  ], // Added a new category
+  Languages: ["C/C++", "Python", "Java", "JavaScript", "TypeScript", "PHP"],
+  Frontend: [
+    "React.js",
+    "HTML5",
+    "CSS3",
+    "Tailwind",
+    "Bootstrap",
+    "NextJs",
+    "MaterialUI",
+  ],
+  Backend: ["Node.js", "Express.js", "Flask", "FastAPI", "Spring Boot"],
+  Databases: ["MySQL", "MongoDB", "Firebase"],
+  "DevOps & Platforms": ["Docker", "Git", "GitHub", "Vercel", "AWS", "Render"], // Added one more for example
+  "AI/ML & Data": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy"], // Added a new category
 };
 
 // Styled Chip for consistent appearance

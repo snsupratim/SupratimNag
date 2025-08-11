@@ -123,8 +123,8 @@ const About = () => {
               applications. Currently, I'm pursuing my B.Tech in Computer
               Science & Engineering with a specialization in Artificial
               Intelligence and Machine Learning from the MCKV Institute of
-              Engineering. I constantly explore new technologies and contribute
-              to open-source projects.
+              Engineering. I constantly explore new technologies and create
+              contents for fellow developers.
             </Typography>
           </Grid>
         </Grid>

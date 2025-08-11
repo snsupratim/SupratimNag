@@ -15,16 +15,25 @@ import BuildIcon from "@mui/icons-material/Build"; // For Tools/DevOps
 import DevicesOtherIcon from "@mui/icons-material/DevicesOther"; // For Other/Concepts if you add them
 
 const skillSet = {
-  Languages: ["C/C++", "Python", "Java", "JavaScript", "Go", "PHP"],
+  Languages: ["C/C++", "Python", "Java", "JavaScript", "TypeScript", "PHP"],
   Frameworks: [
     "React.js",
     "Node.js",
     "Express.js",
     "Flask",
-    "Django",
     "Next.js",
+    "SpringBoot",
+    "FastAPI",
+    "Streamlit",
+    "LangChain",
   ], // Added Next.js
-  Databases: ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Redis"],
+  Databases: [
+    "MySQL",
+    "MongoDB",
+    "Supabase",
+    "Firebase",
+    "VectorDB (PineconeDB,ChromaDB)",
+  ],
   Tools: [
     "Docker",
     "Git",
@@ -33,7 +42,7 @@ const skillSet = {
     "Netlify",
     "AWS (EC2, S3)",
     "HuggingFace",
-  ], // Added Netlify, specific AWS
+  ],
   "AI/ML Libraries": [
     "TensorFlow",
     "Keras",

@@ -61,14 +61,14 @@ const Footer = () => {
 
       <Stack direction="row" spacing={2} justifyContent="center" sx={{ mb: 2 }}>
         <IconButton
-          href="https://github.com/supratim003"
+          href="https://github.com/snsupratim"
           target="_blank"
           sx={{ color: "inherit" }}
         >
           <GitHubIcon />
         </IconButton>
         <IconButton
-          href="https://linkedin.com/in/supratim-nag"
+          href="https://linkedin.com/in/snsupratim"
           target="_blank"
           sx={{ color: "inherit" }}
         >
@@ -80,9 +80,9 @@ const Footer = () => {
         >
           <EmailIcon />
         </IconButton>
-        <IconButton href="/resume.pdf" download sx={{ color: "inherit" }}>
+        {/* <IconButton href="/resume.pdf" download sx={{ color: "inherit" }}>
           <FileDownloadIcon />
-        </IconButton>
+        </IconButton> */}
         <IconButton
           onClick={colorMode.toggleColorMode}
           sx={{ color: "inherit" }}

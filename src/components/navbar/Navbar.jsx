@@ -45,7 +45,16 @@ const Navbar = () => {
     <AppBar
       position="fixed"
       color="default"
-      sx={{ borderBottom: "1px solid #ccc" }}
+      sx={{
+        top: 20,
+        left: 20,
+        right: 20,
+        mx: "auto",
+        width: "calc(100% - 40px)",
+        borderBottom: "1px solid #ccc",
+        borderRadius: 3,
+        boxShadow: "0px 4px 20px rgba(0,0,0,0.1)",
+      }}
     >
       <Toolbar>
         {/* Mobile Menu Icon */}
