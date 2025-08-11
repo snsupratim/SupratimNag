@@ -75,7 +75,7 @@ const Navbar = () => {
           to="/"
           sx={{ textDecoration: "none", color: "inherit", flexGrow: 1 }}
         >
-          Supratim.dev
+          snsupratim
         </Typography>
 
         {/* Desktop Links */}
