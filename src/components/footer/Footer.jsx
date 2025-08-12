@@ -80,9 +80,9 @@ const Footer = () => {
         >
           <EmailIcon />
         </IconButton>
-        {/* <IconButton href="/resume.pdf" download sx={{ color: "inherit" }}>
+        <IconButton href="/SupratimNag.pdf" download sx={{ color: "inherit" }}>
           <FileDownloadIcon />
-        </IconButton> */}
+        </IconButton>
         <IconButton
           onClick={colorMode.toggleColorMode}
           sx={{ color: "inherit" }}

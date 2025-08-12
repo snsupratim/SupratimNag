@@ -12,6 +12,7 @@ import {
 import { styled } from "@mui/system"; // Import styled for custom components
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -183,6 +184,13 @@ const Header = () => {
                   }}
                 >
                   <EmailIcon sx={{ fontSize: { xs: 30, md: 35 } }} />
+                </IconButton>
+                <IconButton
+                  href="/SupratimNag.pdf"
+                  download
+                  sx={{ color: "inherit" }}
+                >
+                  <FileDownloadIcon />
                 </IconButton>
               </Box>
             </AnimatedBox>
