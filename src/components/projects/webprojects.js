@@ -32,6 +32,31 @@ const webprojects = [
     github: "https://github.com/snsupratim/OnlyDev",
     techStack: ["ReactJs", "MySQL", "SpringBoot"],
   },
+  {
+    title: "WeBy",
+    description: "Full-stack Social Media Networking Platform. ",
+
+    image: "/images/w.png",
+    github: "https://github.com/snsupratim/WeBy",
+    techStack: ["ReactJs", "MongoDB", "NodeJs", "ExpressJs", "Socket.io"],
+  },
+  {
+    title: "Relet",
+    description: "Full-stack Messaging Platform. ",
+
+    image: "/images/r.png",
+    github: "https://github.com/snsupratim/Relet",
+    techStack: ["ReactJs", "MongoDB", "NodeJs", "ExpressJs", "Socket.io"],
+  },
+  {
+    title: "AdvanceAuth",
+    description:
+      "Full-stack Authentication application with OTP verification via email. ",
+
+    image: "/images/r.png",
+    github: "https://github.com/snsupratim/auth-demo",
+    techStack: ["ReactJs", "MongoDB", "NodeJs", "ExpressJs", "MailTrap"],
+  },
   // Add more projects...
 ];
 

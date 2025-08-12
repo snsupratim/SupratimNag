@@ -51,6 +51,13 @@ const aimlprojects = [
     ],
     github: "https://github.com/snsupratim/XMLRoleValidator",
   },
+  {
+    title: "RagBot 2.0",
+    image: "/images/g.png",
+    description: "End-To-End Modular RAG based PDF Chatbot.",
+    techStack: ["Python", "FastAPI", "Streamlit", "PineconeDB", "Groq LLM"],
+    github: "https://github.com/snsupratim/RagBot-2.0",
+  },
 ];
 
 export default aimlprojects;
