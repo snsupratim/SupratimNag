@@ -42,14 +42,14 @@ const ProjectCard = ({ project }) => {
         >
           GitHub
         </Button>
-        {/* <Button
+        <Button
           size="small"
           href={project.livedemo}
           target="_blank"
           // startIcon={<GitHubIcon />}
         >
           Live Demo
-        </Button> */}
+        </Button>
       </CardActions>
     </Card>
   );

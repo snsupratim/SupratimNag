@@ -89,6 +89,9 @@ const Navbar = () => {
           {/* <Button component={Link} to="/sndev" color="inherit">
             Sn Dev
           </Button> */}
+          <Button component={Link} to="/resume" color="inherit">
+            Resume
+          </Button>
           <Button
             color="inherit"
             onClick={handleDropdownOpen}

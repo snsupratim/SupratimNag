@@ -2,27 +2,27 @@ import React from "react";
 import {
   Box,
   Typography,
-  Card,
-  CardContent,
-  Grid,
   useTheme,
-  Button, // Import Button for certificate view
-  Dialog, // Import Dialog for modal view of certificate
+  Button,
+  Dialog,
   DialogContent,
   DialogTitle,
   IconButton,
-  Tooltip, // For tooltips on icons/buttons
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
 } from "@mui/material";
-import SchoolIcon from "@mui/icons-material/School"; // Reusing SchoolIcon for courses
-import LinkIcon from "@mui/icons-material/Link"; // For linking to certificates
-import CloseIcon from "@mui/icons-material/Close"; // For closing the dialog
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium"; // A more specific icon for certificates
-import { styled } from "@mui/system"; // For styled components
+import CloseIcon from "@mui/icons-material/Close";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import LinkIcon from "@mui/icons-material/Link";
 
-// Define your courses data with a certificate property (optional)
 const courses = [
   {
-    title: "Python for Data Science.",
+    title: "Python for Data Science",
     platform: "Udemy (Sara Academy)",
     year: "2023",
     certificate: "/certificates/python_data_science_certificate.pdf",
@@ -35,7 +35,7 @@ const courses = [
   },
   {
     title: "Programming using Java",
-    platform: "Infosys Springboard", // More specific institution name
+    platform: "Infosys Springboard",
     year: "2025",
     certificate: "/certificates/java.pdf",
   },
@@ -46,21 +46,6 @@ const courses = [
     certificate: "/certificates/dbms.pdf",
   },
 ];
-
-// Styled Card component for hover effects
-const StyledCard = styled(Card)(({ theme }) => ({
-  height: "100%",
-  display: "flex",
-  flexDirection: "column",
-  backgroundColor: theme.palette.background.paper,
-  borderRadius: theme.shape.borderRadius * 2,
-  boxShadow: theme.shadows[6], // Consistent shadow with education cards
-  transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
-  "&:hover": {
-    transform: "translateY(-5px)", // Lift effect on hover
-    boxShadow: theme.shadows[10], // More prominent shadow on hover
-  },
-}));
 
 const Courses = () => {
   const theme = useTheme();
@@ -79,10 +64,10 @@ const Courses = () => {
 
   return (
     <Box
-      id="courses" // Add an ID for potential navigation
+      id="courses"
       sx={{
-        py: { xs: 8, md: 12 }, // Responsive vertical padding
-        px: { xs: 2, sm: 4, md: 8 }, // Responsive horizontal padding
+        py: { xs: 8, md: 12 },
+        px: { xs: 2, sm: 4, md: 8 },
         backgroundColor: theme.palette.background.default,
         color: theme.palette.text.primary,
         textAlign: "center",
@@ -98,88 +83,83 @@ const Courses = () => {
           fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
         }}
       >
-        <span style={{ color: theme.palette.text.primary }}>Courses & </span>
-        Certifications 📚
+        <span style={{ color: theme.palette.text.primary }}>
+          Courses & Certifications
+        </span>{" "}
+        📚
       </Typography>
 
-      <Grid
-        container
-        spacing={{ xs: 3, md: 5 }} // Responsive spacing between cards
-        justifyContent="center"
-        sx={{ maxWidth: "1200px", mx: "auto" }}
+      {/* Table Structure */}
+      <TableContainer
+        component={Paper}
+        sx={{
+          maxWidth: "1000px",
+          mx: "auto",
+          borderRadius: 3,
+          boxShadow: 4,
+        }}
       >
-        {courses.map((course, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <StyledCard>
-              <CardContent sx={{ flexGrow: 1, p: { xs: 2, sm: 3 } }}>
-                {" "}
-                {/* Responsive padding */}
-                <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                  <SchoolIcon
-                    color="primary"
-                    sx={{ mr: 1, fontSize: "1.5rem" }}
-                  />
-                  <Typography
-                    variant="h6"
-                    fontWeight="bold"
-                    sx={{
-                      color: theme.palette.primary.dark,
-                      fontSize: { xs: "1rem", sm: "1.15rem" },
-                    }}
-                  >
-                    {course.title}
-                  </Typography>
-                </Box>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ mb: 1 }}
-                >
-                  {course.platform}
-                </Typography>
-                <Typography variant="caption" color="text.disabled">
-                  {" "}
-                  {/* Smaller, subtle year */}
-                  {course.year}
-                </Typography>
-                <Box sx={{ mt: 2 }}>
+        <Table>
+          <TableHead>
+            <TableRow sx={{ backgroundColor: theme.palette.primary.light }}>
+              <TableCell sx={{ fontWeight: "bold", color: "white" }}>
+                Course Title
+              </TableCell>
+              <TableCell sx={{ fontWeight: "bold", color: "white" }}>
+                Platform
+              </TableCell>
+              <TableCell sx={{ fontWeight: "bold", color: "white" }}>
+                Year
+              </TableCell>
+              <TableCell
+                sx={{ fontWeight: "bold", color: "white" }}
+                align="center"
+              >
+                Actions
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {courses.map((course, index) => (
+              <TableRow
+                key={index}
+                sx={{
+                  "&:hover": { backgroundColor: theme.palette.action.hover },
+                }}
+              >
+                <TableCell>{course.title}</TableCell>
+                <TableCell>{course.platform}</TableCell>
+                <TableCell>{course.year}</TableCell>
+                <TableCell align="center">
                   {course.certificate && (
                     <Button
                       variant="outlined"
-                      color="primary"
                       size="small"
                       startIcon={<WorkspacePremiumIcon />}
                       onClick={() => handleClickOpen(course.certificate)}
                       sx={{ mr: 1 }}
                     >
-                      View Certificate
+                      View
                     </Button>
                   )}
                   {course.platformLink && (
                     <Button
-                      variant="text" // Text button for less emphasis
-                      color="inherit" // Inherit text color
+                      variant="text"
                       size="small"
                       startIcon={<LinkIcon />}
                       href={course.platformLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      sx={{
-                        "&:hover": {
-                          color: theme.palette.primary.main, // Primary color on hover
-                          backgroundColor: "transparent",
-                        },
-                      }}
                     >
-                      Course Link
+                      Link
                     </Button>
                   )}
-                </Box>
-              </CardContent>
-            </StyledCard>
-          </Grid>
-        ))}
-      </Grid>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
 
       {/* Certificate Viewer Dialog */}
       <Dialog
@@ -212,7 +192,6 @@ const Courses = () => {
           </IconButton>
         </DialogTitle>
         <DialogContent dividers sx={{ p: 0 }}>
-          {/* Using an iframe to embed PDF/image. Adjust width/height as needed */}
           {currentCertificate && (
             <Box
               component="iframe"
@@ -220,7 +199,7 @@ const Courses = () => {
               title="Certificate Viewer"
               sx={{
                 width: "100%",
-                height: { xs: "calc(100vh - 120px)", sm: "600px" }, // Responsive height
+                height: { xs: "calc(100vh - 120px)", sm: "600px" },
                 border: "none",
               }}
             />

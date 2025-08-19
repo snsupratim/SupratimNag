@@ -8,6 +8,7 @@ import WebProjectsPage from "./components/projects/WebProjectsPage";
 import AIMLProjectsPage from "./components/projects/AIMLProjectPage";
 import YouTubePage from "./components/sndev/YouTubePage";
 import ChannelPage from "./components/sndev/ChannelPage";
+import Resume from "./components/resume/Resume";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/aiml-development" element={<AIMLProjectsPage />} />
           <Route path="/sndev" element={<YouTubePage />} />
           <Route path="/sndev-channel" element={<ChannelPage />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
       <Footer />

@@ -32,12 +32,30 @@ const projects = [
     ],
   },
   {
+    title: "WeBy",
+    description: "Full-stack Social Media Networking Platform. ",
+
+    image: "/images/weby.png",
+    github: "https://github.com/snsupratim/WeBy",
+    tech: ["ReactJs", "MongoDB", "NodeJs", "ExpressJs", "Socket.io"],
+    livedemo: "https://weby-5341.onrender.com/auth",
+  },
+  {
     title: "OnlyDev",
     description: "Full-stack Freelance service provider application . ",
 
     image: "/images/o.png",
     github: "https://github.com/snsupratim/OnlyDev",
     tech: ["ReactJs", "MySQL", "SpringBoot"],
+  },
+  {
+    title: "Relet",
+    description: "Full-stack Messaging Platform. ",
+
+    image: "/images/relet.png",
+    github: "https://github.com/snsupratim/Relet",
+    tech: ["ReactJs", "MongoDB", "NodeJs", "ExpressJs", "Socket.io"],
+    livedemo: "https://relet.onrender.com/login",
   },
   {
     title: "FastCom",

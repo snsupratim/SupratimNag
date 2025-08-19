@@ -3,7 +3,8 @@ import Header from "./Header";
 import TopProjects from "./TopProjects";
 import Education from "./Education";
 import Courses from "./Courses";
-import Skills from "./Skills";
+// import Skills from "./Skills";
+import InternshipTimeline from "./InternshipTimeline";
 
 const HomePage = () => {
   return (
@@ -12,7 +13,8 @@ const HomePage = () => {
       <TopProjects />
       <Education />
       <Courses />
-      <Skills />
+      <InternshipTimeline />
+      {/* <Skills /> */}
     </div>
   );
 };

@@ -1,14 +1,14 @@
 // data/aimlProjects.js
 
 const aimlprojects = [
-  // {
-  //   title: "Disease Prediction",
-  //   image: "/images/roseleaf.png",
-  //   description:
-  //     "CNN-based multi-class classifier for disease detection using custom dataset with ResNet50 .",
-  //   techStack: ["Python", "PyTorch", "CNN", "Pandas"],
-  //   github: "https://github.com/snsupratim/Disease-Prediction",
-  // },
+  {
+    title: "Disease Prediction",
+    image: "/images/dp.jpg",
+    description:
+      "CNN-based multi-class classifier for disease detection using custom dataset with ResNet50 .",
+    techStack: ["Python", "PyTorch", "CNN", "Pandas"],
+    github: "https://github.com/snsupratim/Disease-Prediction",
+  },
   {
     title: "Role Base Access Control Medical Assistant",
     image: "/images/rbac.png",
@@ -22,6 +22,8 @@ const aimlprojects = [
       "Groq LLM",
     ],
     github: "https://github.com/snsupratim/rbac-medicalAssistant",
+    livedemo:
+      "https://rbac-medicalassistant-vbs9bxxzjfnpab6dsrfwah.streamlit.app/",
   },
   {
     title: "RAG based Medical Assistant",
@@ -29,18 +31,21 @@ const aimlprojects = [
     description: "End-To-End Modular RAG based Medical Assistant.",
     techStack: ["Python", "FastAPI", "Streamlit", "PineconeDB", "Groq LLM"],
     github: "https://github.com/snsupratim/medicalAssistant",
+    livedemo: "https://medicalassistantss.streamlit.app/",
   },
   {
     title: "RAG based Shop Assistant",
     image: "/images/shopbot.png",
-    description: "End-To-End Modular RAG based Shop Assistant.",
+    description:
+      "End-To-End Modular RAG based Shop Assistant. (live demo not available)",
     techStack: ["Python", "FastAPI", "Streamlit", "PineconeDB", "Groq LLM"],
     github: "https://github.com/snsupratim/ShopAssistantChatbot2.0",
   },
   {
     title: "RAG based XML RoleValidator",
     image: "/images/roleValidator.png",
-    description: "End-To-End Modular RAG based XML & PDF Role Validator.",
+    description:
+      "End-To-End Modular RAG based XML & PDF Role Validator. (live demo not available)",
     techStack: [
       "Python",
       "FastAPI",
@@ -54,7 +59,8 @@ const aimlprojects = [
   {
     title: "RagBot 2.0",
     image: "/images/g.png",
-    description: "End-To-End Modular RAG based PDF Chatbot.",
+    description:
+      "End-To-End Modular RAG based PDF Chatbot. (live demo not available)",
     techStack: ["Python", "FastAPI", "Streamlit", "PineconeDB", "Groq LLM"],
     github: "https://github.com/snsupratim/RagBot-2.0",
   },
